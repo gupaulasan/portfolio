@@ -1,4 +1,4 @@
-<span>THIS PROJECT IS IN PROGRESS</span>
+<mark>THIS PROJECT IS IN PROGRESS</mark>
 
 # Oscar Winner Prediction
 
