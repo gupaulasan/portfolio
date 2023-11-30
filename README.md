@@ -2,7 +2,7 @@
 
 This is the place I use to develop my self development projects. All of the project are developed in Python programming language and its packages
 
-Contact me via linkedin: [Gustavo Santos](https://www.linkedin.com/in/gustavopsantos/)
+Contact me via Linkedin: [Gustavo Santos](https://www.linkedin.com/in/gustavopsantos/)
 
 ## Projects from scratch
 - [Coffee Shop](https://github.com/gupaulasan/portfolio/tree/main/Coffee%20Shop): Predict the number of reviews a coffee shop will receive based on its info
