@@ -14,6 +14,9 @@ Contact me via linkedin: [Gustavo Santos](https://www.linkedin.com/in/gustavopsa
 - [Credit Card Approval](https://github.com/gupaulasan/portfolio/tree/main/Credit%20Card%20Approval): credit card application analysis using machine learning regression model
 - [Google Play](https://github.com/gupaulasan/portfolio/tree/main/Google%20Play): Google Play exploratory data analysis
 
+## Projects in progress
+- [Oscars Winner Prediciton](https://github.com/gupaulasan/portfolio/tree/main/Oscars%20Winner%20Prediciton): Oscars Best Picture Award winner based on list of nominees
+
 ## Main idea
 For this repository, my idea is to practice as much as possible the different packages and strategies I've learned throughout my Data Science learning journey. Among the packages used in this portfolio are:
 * pandas
