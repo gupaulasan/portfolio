@@ -18,12 +18,11 @@ Contact me via Linkedin: [Gustavo Santos](https://www.linkedin.com/in/gustavopsa
 - [Oscars Winner Prediciton](https://github.com/gupaulasan/portfolio/tree/main/Oscar%20Winner%20Prediciton): Oscars Best Picture Award winner based on list of nominees
 
 ## Main idea
-For this repository, my idea is to practice as much as possible the different packages and strategies I've learned throughout my Data Science learning journey. Among the packages used in this portfolio are:
-* pandas
-* NumPy
-* Seaborn
-* Matplotlib
-* Scikit-Learn
+For this repository, my idea is to practice as much as possible the different packages and strategies I've learned throughout my Data Science learning journey. Among the packages used in this portfolio are:<br><br>
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 _Bare in mind while going through the projects that some of them are not written in the most efficient way. The reason for that, in most cases, is practicing a specific way of completing tasks. Feel free to contact me to discuss anything you would like._
 
