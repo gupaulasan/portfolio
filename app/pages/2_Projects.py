@@ -7,11 +7,9 @@ with st.container(border=True) as container:
         "[Automatic Playlist Continuation](https://github.com/gupaulasan/playlist-continuation/tree/main)"
     )
 
-    st.image("./assets/spotify-playlist.jpg", width=200, output_format="PNG")
-
     st.markdown(
         """
-        Check the project in Github        
+        Check the project on Github        
         
         <a href="https://github.com/gupaulasan/playlist-continuation/tree/main" target="_blank">
         <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
