@@ -106,8 +106,8 @@ st.write(
 
 st.markdown(
     """
-    ##### Federal University of Santa Catarina (UFSC) - Brazil
-    **Bachelor's Degree in Materials Engineering | 03/2019 – 12/2024**
+    ##### [Federal University of Santa Catarina (UFSC) - Brazil](https://en.ufsc.br/)
+    **Bachelor's Degree in Materials Engineering | March 2019 – December/2024**
     
     - Cumulative GPA: 9.3/10
     - Bachelor's thesis title: Implementation and Parameter Estimation of a Sintering Prediction Model in Python
@@ -120,4 +120,28 @@ st.markdown(
     - Access the [link](https://www.datacamp.com/certificate/DSA0013508028257) for more detail
     """,
     unsafe_allow_html=True,
+)
+
+st.write(
+    """
+    ---
+    ## Volunteering
+    """
+)
+
+st.markdown(
+    """
+    ##### [Omdena](https://www.omdena.com/)
+    **Volunteer Data Scientist | January 2025 - current**
+    
+    - **Project:** AI-Assisted Sign Language Translation for Deaf Patients in Brazilian Healthcare Settings [[link]](https://www.omdena.com/chapter-challenges/ai-assisted-sign-language-translation-for-brazilian-healthcare-settings)
+    
+    ##### [Children International Summer Village (CISV)](https://cisv.org/)
+    **Volunteer | January 2012 - March 2019**
+    
+    - NGO that works towards education for a more diverse, sustainable, just and peaceful world.
+    - During one of my experiences, I worked with 48 children from 12 countries.
+    - I acted as a communication link between adults (21+) and children (11).
+     
+    """
 )
