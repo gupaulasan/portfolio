@@ -7,6 +7,8 @@ with st.container(border=True):
         "[Automatic Playlist Continuation](https://github.com/gupaulasan/playlist-continuation/tree/main)"
     )
 
+    # TODO Figure a way to add images without sending them to github
+
     st.markdown(
         """
         Check the project on Github        
@@ -63,6 +65,8 @@ with st.container(border=True):
         """,
         True,
     )
+
+    # TODO Add skills
 
 with st.container(border=True):
     st.header("[Project template](Projects)")
