@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Projects")
 
-with st.container(border=True) as container:
+with st.container(border=True):
     st.header(
         "[Automatic Playlist Continuation](https://github.com/gupaulasan/playlist-continuation/tree/main)"
     )
@@ -50,6 +50,59 @@ with st.container(border=True) as container:
             In this context, the noise would be removing random tracks from playlists and showing the complete playlist as expected output.
             
             #### Training and testing
+            *You can check the way I loaded and split the data to train both models in the link below.*
+            """
+        )
+
+    st.markdown(
+        """
+        #### Skills
+        
+        Here a list of skills I used in this project:
+        
+        """,
+        True,
+    )
+
+with st.container(border=True):
+    st.header("[Project template](Projects)")
+
+    st.markdown(
+        """
+        Check the project on Github        
+        
+        <a href="Projects" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
+        
+        #### Introduction
+        *Small description of the project*
+        """
+    )
+
+    with st.expander("Show further description"):
+        st.write(
+            """
+            #### Solution
+            *Describe some of the approaches you used in the solution*
+            
+            #### Training and testing
             You can check the way I loaded and split the data to train both models in the link below.
             """
         )
+
+    st.markdown(
+        """
+        #### Skills
+        
+        Here a list of skills I used in this project:
+        
+        """,
+        True,
+    )
