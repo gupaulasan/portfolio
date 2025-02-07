@@ -145,3 +145,23 @@ st.markdown(
      
     """
 )
+
+st.markdown(
+    """
+    ---
+    ## Contact me
+    
+    <a href="https://www.linkedin.com/in/gustavopsantos/" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" data-canonical-src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" style="max-width: 100%;">
+    </a>
+
+    <a href="mailto:gupaulasan@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" data-canonical-src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" style="max-width: 100%;">
+    </a>
+    
+    <a href="https://github.com/gupaulasan" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+    </a>
+    """,
+    True,
+)
