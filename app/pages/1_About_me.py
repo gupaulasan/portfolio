@@ -24,6 +24,8 @@ text.markdown(
     As you can check in my <a href="Projects" target="_self">Projects</a> page, during the time I have been studying, I applied what I studied in practical projects.<br>
     
     I'm seeking an opportunity as Junior Data Scientist in a professional environment that values innovation and technical excellence.
+    
+    I'm currently based in Florianópolis - Brazil 🇧🇷. However, I'm open to moving in order to get an on-site position where it is needed.
     """,
     unsafe_allow_html=True,
 )
