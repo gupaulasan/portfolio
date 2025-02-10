@@ -2,39 +2,63 @@ import streamlit as st
 
 st.title("Projects")
 
-with st.container(border=True):
-    st.header(
-        "[Automatic Playlist Continuation](https://github.com/gupaulasan/playlist-continuation/tree/main)"
-    )
 
-    # TODO Figure a way to add images without sending them to github
+def project_container(
+    title: str,
+    url: str,
+    intro: str,
+    description: str,
+    skills: str,
+):
+    """Sets a containered project description up."""
+    with st.container(border=True):
+        st.header(f"[{title}]({url})")
 
-    st.markdown(
-        """
-        Check the project on Github        
-        
-        <a href="https://github.com/gupaulasan/playlist-continuation/tree/main" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-        </a>
-        """,
-        unsafe_allow_html=True,
-    )
+        st.markdown(
+            f"""
+            Check the project on Github
+            
+            <a href="{url}" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+            </a>
+            """,
+            unsafe_allow_html=True,
+        )
 
-    st.markdown(
-        """
-        
-        #### Introduction
+        st.markdown(
+            f"""
+            
+            #### Introduction
+            {intro}
+            """
+        )
+
+        with st.expander("Show further description"):
+            st.write(description)
+
+        st.markdown(
+            f"""
+            #### Skills
+            
+            Here a list of technical skills I used in this project:
+            {skills}
+            """,
+            True,
+        )
+
+
+# PLAYLIST CONTINUATION
+playlist_title = "Automatic Playlist Continuation"
+playlist_url = "https://github.com/gupaulasan/playlist-continuation/tree/main"
+playlist_intro = """
         This project was developed as part of a graduate course I took in uni.      
         It originated from a [RecSys challenge](https://research.atspotify.com/publications/recsys-challenge-2018-automatic-music-playlist-continuation/) and the solutions were based on best solution from the original challenge.
         
         The idea here was to create a program that acts in a similar way as the Spotify's Playlist Continuation feature.        
         Based on the tracks chosen by an user, the program should choose 5 possible tracks to be added to that same playlist.
         """
-    )
 
-    with st.expander("Show further description"):
-        st.write(
-            """
+playlist_description = """
             #### Solution
             Based on the problem set, I chose, as baseline, an approach that used collaborative filtering for the task.     
             However, due to the lack of performance from the approach above, I decided to try a Denoising Autoencoder approach.
@@ -54,59 +78,40 @@ with st.container(border=True):
             #### Training and testing
             *You can check the way I loaded and split the data to train both models in the link below.*
             """
-        )
 
-    st.markdown(
-        """
-        #### Skills
+playlist_skills = ""
+
+project_container(
+    playlist_title, playlist_url, playlist_intro, playlist_description, playlist_skills
+)
+
+
+credit_title = "Credit Scoring"
+credit_url = "https://github.com/gupaulasan/credit-score"
+credit_intro = """
+        The idea of this project was to train a model that could predict the risk of a credit transaction, based a transactions history.        
+        Every transaction should receive a score between 0 and 1, 0 representing a higher chance of financial loss.
         
-        Here a list of skills I used in this project:
-        
-        """,
-        True,
-    )
-
-    # TODO Add skills
-
-with st.container(border=True):
-    st.header("[Project template](Projects)")
-
-    st.markdown(
-        """
-        Check the project on Github        
-        
-        <a href="Projects" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-        </a>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        """
-        
-        #### Introduction
-        *Small description of the project*
-        """
-    )
-
-    with st.expander("Show further description"):
-        st.write(
-            """
+"""
+credit_description = """
             #### Solution
-            *Describe some of the approaches you used in the solution*
             
-            #### Training and testing
-            You can check the way I loaded and split the data to train both models in the link below.
+            For this project, I trained classifiers and compared their perfomances.     
+            I used the outuput probabilities of models as credit score.     
+            Due to this approach, all the models were comapred using a 0.5 proba threshold for class definition.
+            
+            #### Data
+            
+            The data used in this project consists of multiple tables containing different information about the clients and transactions.      
+            In order to develop the solution, some feature engineering was necessary.
+            
+            #### Repo structure
+            
+            As this project was part of a technical challenge, all development and data exploration is located in a single Jupyter Notebook.
+            
             """
-        )
+credit_skills = ""
 
-    st.markdown(
-        """
-        #### Skills
-        
-        Here a list of skills I used in this project:
-        
-        """,
-        True,
-    )
+project_container(
+    credit_title, credit_url, credit_intro, credit_description, credit_skills
+)
