@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title("Projects")
 
+st.write("Here's a brief description of some projects I've developed along the way.")
+
 
 def project_container(
     title: str,
