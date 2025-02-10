@@ -54,6 +54,7 @@ pages = [
     st.Page(home_page, title="Home", icon=":material/home:"),
     st.Page("pages/1_About_me.py", title="About me", icon="😁"),
     st.Page("pages/2_Projects.py", title="Projects", icon="📁"),
+    st.Page("pages/3_CV.py", title="Check my CV", icon="📄"),
 ]
 
 current_page = st.navigation(pages=pages, position="hidden")
