@@ -14,7 +14,7 @@ pt.link_button(
     label="Acesse meu currículo",
     url="https://drive.google.com/file/d/1e_i0SGpTwDJd_wAIVymFiItSIOHOhZ38/view?usp=sharing",
     type="primary",
-    help="Fique à vontade para fazer o download do arquivo",
+    help="Você será direcionado para o Google Drive",
     use_container_width=False,
 )
 en.markdown(
@@ -28,5 +28,5 @@ en.link_button(
     label="Access my CV",
     url="https://drive.google.com/file/d/1Xo1CZjjbWUoiCQyoQ-NGl9Wp212CS7AA/view?usp=drive_link",
     type="primary",
-    help="Feel free to download the file",
+    help="You are going to be directed to Google Drive",
 )
