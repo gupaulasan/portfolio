@@ -12,6 +12,7 @@ def project_container(
     intro: str,
     description: str,
     skills: str,
+    show_gh: bool = True,
 ):
     """Sets a containered project description up."""
     with st.container(border=True):
@@ -19,16 +20,17 @@ def project_container(
 
         st.image(image=img["url"], caption=img["caption"], width=350)
 
-        st.markdown(
-            f"""
-            Check the project on Github
-            
-            <a href="{url}" target="_blank">
-            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-            </a>
-            """,
-            unsafe_allow_html=True,
-        )
+        if show_gh:
+            st.markdown(
+                f"""
+                Check the project on Github
+                
+                <a href="{url}" target="_blank">
+                <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+                </a>
+                """,
+                unsafe_allow_html=True,
+            )
 
         st.markdown(
             f"""
@@ -40,7 +42,7 @@ def project_container(
         )
 
         with st.expander("Show further description"):
-            st.write(description)
+            st.markdown(description, unsafe_allow_html=True)
 
         st.markdown(
             """
@@ -92,23 +94,24 @@ playlist_description = """
             """
 
 playlist_skills = """
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)       
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Keras
+- Recommender Systems
 """
 
 project_container(
-    playlist_title,
-    playlist_url,
-    playlist_img,
-    playlist_intro,
-    playlist_description,
-    playlist_skills,
+    title=playlist_title,
+    url=playlist_url,
+    img=playlist_img,
+    intro=playlist_intro,
+    description=playlist_description,
+    skills=playlist_skills,
 )
 
-
+# Credit scoring
 credit_title = "Credit Scoring"
 credit_url = "https://github.com/gupaulasan/credit-score"
 
@@ -139,18 +142,68 @@ credit_description = """
             
             """
 credit_skills = """
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)       
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+- Python
+- Pandas
+- Numpy
+- Matplotlib
+- Scikit-learn
+- Risk prediction
+"""
+project_container(
+    title=credit_title,
+    url=credit_url,
+    img=credit_img,
+    intro=credit_intro,
+    description=credit_description,
+    skills=credit_skills,
+)
+
+# Dynamox clustering
+dyna_title = "Automatic Operational Mode Identification"
+dyna_url = "https://gama.ufsc.br/projetos/#:~:text=Projetos%20Ativos-,Detec%C3%A7%C3%A3o%20e%20diagn%C3%B3stico%20de%20falhas%20em%20ativos%20industriais,-O%20projeto%20tem"
+dyna_img = {
+    "url": "https://gama.ufsc.br/images/projetos/detect_e_diagnos.png",
+    "caption": "",
+}
+dyna_intro = """
+        ***Disclaimer**: This project was developed in a closed source environment, for that reason, only the main idea and results are being described*
+        
+        The main idea of this project was to automatically identify and group signals using machine learning. Signals should be grouped into 'Operational Mode' groups.     
+        After the grouping phase, experts would label some of the samples in each group so that the label could be propagated to all the other samples in the group.
+        
+"""
+dyna_description = """
+        #### Solution
+        
+        Based on the scope of the project, a clustering approach was used.      
+        As a way to make the performance of the clustering techniques better, some feature engineering was performed. For legal reasons, the feature extraction part will not be further described
+        
+        #### Data
+        
+        The data used in this project were the responses from vibration sensors installed in industrial environments.
+        
+        #### Results
+        
+        The final product of the project was a <a href='https://dash.plotly.com/'>Dash</a> app in which experts can analyse and label the data.        
+        This clustering method allowed the team to correct 20% of past reports, indirectly allowing the supervised model to perform better. 
+"""
+
+dyna_skills = """
+    - Python
+    - Numpy
+    - Pandas
+    - Scikit-learn
+    - Dash
+    - Plotly
+    - Unsupervised learning
 """
 
 project_container(
-    credit_title,
-    credit_url,
-    credit_img,
-    credit_intro,
-    credit_description,
-    credit_skills,
+    title=dyna_title,
+    url=dyna_url,
+    img=dyna_img,
+    intro=dyna_intro,
+    description=dyna_description,
+    skills=dyna_skills,
+    show_gh=False,
 )
