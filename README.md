@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-This repo contains an app to display my personal projects and their results
+This repo contains an app to display my personal projects and their results.
 
 ## Project Organization
 
