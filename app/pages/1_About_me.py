@@ -65,6 +65,22 @@ st.write(
 
 st.markdown(
     """
+    ##### [Omdena](https://www.omdena.com/)
+    **Data Scientist | January 2025 - current [Part time]**
+    
+    - **Project:** AI-Assisted Sign Language Translation for Deaf Patients in Brazilian Healthcare Settings [[link]](https://www.omdena.com/chapter-challenges/ai-assisted-sign-language-translation-for-brazilian-healthcare-settings)
+    
+    - Contributed on computer vision model development for Brazilian Sign Language (LIBRAS) video translation using deep learning.
+    
+    - Lead a data processing squad. Processings included: exploratory data analysis, natural language processing (NLP), and data standardization.
+    
+    - Web scraped videos and metadata from unstructured websites using AIOHTTP, Requests, Selenium and BeautifulSoup.
+    
+    - Co-lead a 57 member project. Focused on task organization, help with machine learning model development and code review.
+    
+    _*Skills*_: Git, Python, Machine Learning, Deep Learning, Computer Vision, pandas, BeautifulSoup, Leadership
+    
+    
     ##### [GAMA - Machine Learning & Applications Research Group](https://gama.ufsc.br/)
     **Intern Data Scientist | January 2024 - December 2024**
     
@@ -83,11 +99,15 @@ st.markdown(
     
     - I used git to version control my code.
     
+    _*Skills*_: Python, Machine Learning, pandas, NumPy, Scikit-Learn, clustering, SciPy, Git
+    
     ##### [SCiTec - Materials Testing Laboratory](https://scitec.com.br/en/)
     **Intern | August 2022 - January 2023**
     - I processed and analyzed experimental data using Excel.
     - I prepared technical reports for clients.
     - I consolidated spreadsheets for data treatment based on technical procedures.
+    
+    _*Skills*_: Excel, Team work, Critical thinking, Analytical Vision
     
     ##### EJEM (Materials Engineering Junior Enterprise)
     **Executive Director and Project Manager | January 2021 – July 2022**
@@ -95,6 +115,8 @@ st.markdown(
     - I directly led 3 team members and indirectly led 12 members.
     - I collaborated with the sales department to increase first-quarter revenue by 223%
     - I developed automatic project data extraction using Python.
+    
+    _*Skills*_: Excel, Python, PowerBI, KPI, SCRUM, Leadership, Communication
 
     """,
     unsafe_allow_html=True,
@@ -134,11 +156,6 @@ st.write(
 
 st.markdown(
     """
-    ##### [Omdena](https://www.omdena.com/)
-    **Volunteer Data Scientist | January 2025 - current**
-    
-    - **Project:** AI-Assisted Sign Language Translation for Deaf Patients in Brazilian Healthcare Settings [[link]](https://www.omdena.com/chapter-challenges/ai-assisted-sign-language-translation-for-brazilian-healthcare-settings)
-    
     ##### [Children International Summer Village (CISV)](https://cisv.org/)
     **Volunteer | January 2012 - March 2019**
     
